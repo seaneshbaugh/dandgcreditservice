@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+#container {
+	padding-top: 100px;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
