@@ -1,21 +1,168 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: "Lobster";
+  src: url(/fonts/Lobster/Lobster.eot);
+  src: url(/fonts/Lobster/Lobster.ttf) format("truetype"), url(/fonts/Lobster/Lobster.svg#Lobster) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Begin General Page Styles*/
+
 html {
 	height: 100%;
+	overflow-y: scroll;
 }
 
 body {
+	background: url(../images/background.jpg) repeat scroll 0 0 #8a97a1;
+	color: #383838;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 19px;
 	height: 100%;
+	min-width: 1024px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
+
+h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;
+}
+
+/* End General Page Styles */
+
+/* Begin Container */
 
 #container {
-	padding-top: 100px;
+	margin: 0 auto;
+	min-height: 100%;
+	width: 1000px;
 }
 
-h1 {
+/* End Container */
+
+/* Begin Main Header */
+
+#main-header {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 1000px;
+}
+
+#main-nav ul {
+	list-style: none;
+}
+
+#main-nav ul li {
+	float: left;
+	margin-right: 30px;
+}
+
+#main-nav ul li a {
+	color: #ffffff;
+	font-size: 30px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Begin Main Header */
+
+/* Begin Page Content */
+
+#content {
+	background: url(../images/content-background.jpg) repeat scroll 0 0 #e5e9f7;
+	border: 1px solid #455a71;
+	overflow: auto;
+	padding: 20px
+}
+
+#content h1 {
+	color: #ffffff;
+	font-family: "Lobster", serif;
+	font-size: 30px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* End Page Content */
+
+/* Begin Main Footer */
+
+#main-footer {
+	clear: both;
+	height: 100px;
+	margin-top: -100px;
+	position: relative;
+}
+
+#main-footer-content {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+#main-footer-nav ul {
+	list-style: none;
+}
+
+#main-footer-nav ul li {
+	float: left;
+	margin-right: 10px;
+}
+
+#main-footer-nav ul li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* End Main Footer */
+
+/* Begin Elevator Pitch */
+
+#pitch {
+	margin-bottom: 20px;
+}
+
+#pitch h1 {
+	color: #383838;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 44px;
 	text-align: center;
 }
 
-p {
-	text-align: center;
+#pitch p {
+	font-size: 30px;
+	text-align: justify;
 }
+
+/* End Elevator Pitch
+
+/* Begin Contact Form */
+
+#contact-form {
+	background: #e4e8f4;
+	border: 1px solid #b0b6c9;
+	border-radius: 4px;
+	float: left;
+	width: 450px;
+}
+
+#contact-form p {
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.contact-form-field {
+	border-bottom: 1px solid #b0b6c9;
+	border-top: 1px solid #f2f4fa;
+}
+
+/* End Contact Form */
+
+/* Begin Video Intro */
+
+#video {
+	float: right;
+	width: 480px;
+}
+
+/* End Video Intro */
