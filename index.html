@@ -19,48 +19,57 @@
 	<link href="/humans.txt" rel="author" />
 </head>
 <body>
+	<div id="alert-message">
+		<div id="alert-message-title">
+		</div>
+		<div id="alert-message-body">
+		</div>
+	</div>
 	<div id="container">
-		<header id="main-header">
-			<h1>D &amp; G Credit Service</h1>
-			<nav id="main-nav">
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="/about.html">About</a></li>
-					<li><a href="/services.html">Services</a></li>
-					<li><a href="/testimonials.html">Testimonials</a></li>
-				</ul>
-			</nav>
-		</header>
-		<div id="content">
-			<div id="pitch">
-				<h1>We help you get your credit back on track.</h1>
-				<p>Our credit repair system is the only one that goes after the creditors' deceptive reporting. Unlike a typical credit repair company we don't dispute your debt. We make sure that your creditors are fairly and accurately reporting what you owe. The result is a <strong>better credit score</strong>.</p>
-			</div>
-			<form accept-charset="UTF-8" action="/cgi-bin/contact.rb" method="post" id="contact-form">
-				<h1>Contact Us</h1>
-				<p>We'd love to hear from you. Whether you're interested in our services or if you have questions about credit in general. Feel free to drop us a line.</p>
-				<fieldset>
-					<input name="ajax" type="hidden" value="0" id="contact-form-ajax" />
-					<input name="utf8" type="hidden" value="&#x2713;" id="contact-form-utf8" />
-					<div class="contact-form-field">
-						<input type="text" name="name" value="" id="contact-form-name" placeholder="Your Name" autocapitalize="off" autocorrect="off" />
-					</div>
-					<div class="contact-form-field">
-						<input type="email" name="email_address" value="" id="contact-form-email-address" placeholder="Your Email" autocapitalize="off" autocorrect="off" />
-					</div>
-					<div class="contact-form-field">
-						<input type="number" name="phone_number" value="" id="contact-form-phone-number" placeholder="Phone Number" autocapitalize="off" autocorrect="off" />
-					</div>
-					<div class="contact-form-field">
-						<textarea name="message" id="contact-form-message" placeholder="Comments and Questions"></textarea>
-					</div>
-					<div class="contact-form-field">
-						<input type="submit" name="commit" value="SUBMIT" id="contact-form-submit" />
-					</div>
-				</fieldset>
-			</form>
-			<div id="video">
-				<iframe src="http://www.youtube.com/embed/u1a4rh_EcK0?rel=0;3&amp;autohide=1&amp;showinfo=0" frameborder="0" width="480" height="360"></iframe>
+		<div id="wrap">
+			<header id="main-header">
+				<h1>D &amp; G Credit Service</h1>
+				<nav id="main-nav">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/about.html">About</a></li>
+						<li><a href="/services.html">Services</a></li>
+						<li><a href="/testimonials.html">Testimonials</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="content">
+				<div id="pitch">
+					<h1>We help you get your credit back on track.</h1>
+					<p>Our credit repair system is the only one that goes after the creditors' deceptive reporting. Unlike a typical credit repair company we don't dispute your debt. We make sure that your creditors are fairly and accurately reporting what you owe. The result is a <strong>better credit score</strong>.</p>
+				</div>
+				<form accept-charset="UTF-8" action="/cgi-bin/contact.rb" method="post" name="contact-form" id="contact-form">
+					<h1>Contact Us</h1>
+					<p>We'd love to hear from you. Whether you're interested in our services or if you have questions about credit in general. Feel free to drop us a line.</p>
+					<fieldset>
+						<input name="ajax" type="hidden" value="0" id="contact-form-ajax" />
+						<input name="utf8" type="hidden" value="&#x2713;" id="contact-form-utf8" />
+						<!--<input name="test" type="hidden" value="1" id="contact-form-test" />-->
+						<div class="contact-form-field">
+							<input type="text" name="name" value="" id="contact-form-name" placeholder="Your Name" autocapitalize="off" autocorrect="off" />
+						</div>
+						<div class="contact-form-field">
+							<input type="email" name="email_address" value="" id="contact-form-email-address" placeholder="Your Email" autocapitalize="off" autocorrect="off" />
+						</div>
+						<div class="contact-form-field">
+							<input type="number" name="phone_number" value="" id="contact-form-phone-number" placeholder="Phone Number" autocapitalize="off" autocorrect="off" />
+						</div>
+						<div class="contact-form-field">
+							<textarea name="message" id="contact-form-message" placeholder="Comments and Questions"></textarea>
+						</div>
+						<div class="contact-form-field">
+							<input type="submit" name="commit" value="SUBMIT" id="contact-form-submit" />
+						</div>
+					</fieldset>
+				</form>
+				<div id="video">
+					<iframe src="http://www.youtube.com/embed/u1a4rh_EcK0?rel=0;3&amp;autohide=1&amp;showinfo=0&amp;wmode=opaque" frameborder="0" width="480" height="360"></iframe>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -75,7 +84,7 @@
 					<li><a href="http://www.youtube.com/user/creditprepair">YouTube</a></li>
 				</ul>
 			</nav>
-			<p id="copyright">&copy; <span id="copyright-year">2012</span> D &amp; G Credit Service. All Rights Reserved. Designed by <a href="http://seaneshbaugh.com/">Sean Eshbaugh</a>.</p>
+			<p id="copyright">Content &copy; <span id="copyright-year">2012</span> D &amp; G Credit Service. All Rights Reserved. Designed by <a href="http://seaneshbaugh.com/">Sean Eshbaugh</a>.</p>
 		</div>
 	</footer>
 	<script src="/javascripts/jquery-1.7.2.min.js"></script>
